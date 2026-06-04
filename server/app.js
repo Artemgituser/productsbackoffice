@@ -6,15 +6,25 @@ const sequelize = require("./db");
 const { User } = require("./models");
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = process.env.PORT || 4011;
 
-// CORS configuration
-app.use(
-  cors({
-    origin: true, // Reflects the request origin in the Access-Control-Allow-Origin header
-    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-  }),
-);
+// Manual CORS + Logging
+app.use((req, res, next) => {
+  const origin = req.headers.origin;
+  console.log(`[${new Date().toISOString()}] ${req.method} ${req.path} - Origin: ${origin}`);
+
+  // We allow the specific origin or reflect the request origin
+  res.setHeader("Access-Control-Allow-Origin", origin || "*");
+  res.setHeader("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
+  res.setHeader("Access-Control-Allow-Headers", "Content-Type, Authorization");
+  res.setHeader("Access-Control-Allow-Credentials", "true");
+
+  if (req.method === "OPTIONS") {
+    console.log(`[${new Date().toISOString()}] Handled OPTIONS preflight`);
+    return res.status(200).end();
+  }
+  next();
+});
 
 app.use(express.json());
 
