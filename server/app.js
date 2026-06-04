@@ -13,9 +13,6 @@ app.use(
   cors({
     origin: true, // Reflects the request origin in the Access-Control-Allow-Origin header
     methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
-    allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true,
-    optionsSuccessStatus: 200,
   }),
 );
 
