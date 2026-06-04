@@ -1,80 +1,41 @@
 @import "tailwindcss";
 
 @theme {
-<<<<<<< HEAD
   --color-primary: #006666;
-  --color-secondary: #F1F2F5;
-  --color-success: #00A63D;
-  --color-warning: #FE9900;
-  --color-danger: #FF2157;
-  --color-surface: #E7E5E4;
-  --color-text: #0F172A;
+  --color-secondary: #f1f2f5;
+  --color-success: #00a63d;
+  --color-warning: #fe9900;
+  --color-danger: #ff2157;
+  --color-surface: #e7e5e4;
+  --color-text: #0f172a;
 
   --font-sans: "Space Mono", monospace;
   --font-mono: "JetBrains Mono", monospace;
 
   --shadow-neumorphic: 8px 8px 16px #c4c2c1, -8px -8px 16px #ffffff;
-  --shadow-neumorphic-inset: inset 4px 4px 8px #c4c2c1, inset -4px -4px 8px #ffffff;
+  --shadow-neumorphic-inset:
+    inset 4px 4px 8px #c4c2c1, inset -4px -4px 8px #ffffff;
 }
 
 @layer base {
-  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap');
-=======
-  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
-  
-  --color-primary: #0C5CAB;
-  --color-secondary: #0a4a8a;
-  --color-success: #10b981;
-  --color-warning: #f59e0b;
-  --color-danger: #ef4444;
-  --color-surface: #09090b;
-  --color-text: #fafafa;
-}
-
-@layer base {
-  @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@100;200;300;400;500;600;700;800;900&display=swap');
->>>>>>> 53d7e9f (first commit)
+  @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Space+Mono:wght@400;700&display=swap");
 
   body {
     @apply bg-surface text-text font-sans antialiased;
     margin: 0;
   }
-<<<<<<< HEAD
 }
 
 @layer components {
   .neumorphic-panel {
     @apply bg-surface rounded-3xl p-6 shadow-neumorphic;
   }
-  
+
   .neumorphic-btn {
     @apply px-6 py-3 rounded-2xl font-bold transition-all duration-300 shadow-neumorphic active:shadow-neumorphic-inset cursor-pointer;
   }
 
   .neumorphic-input {
     @apply w-full bg-surface rounded-xl px-4 py-3 shadow-neumorphic-inset focus:outline-none;
-=======
-
-  h1 { @apply text-4xl font-bold mb-4; }
-  h2 { @apply text-3xl font-semibold mb-3; }
-  h3 { @apply text-2xl font-semibold mb-2; }
-}
-
-@layer components {
-  .glass-panel {
-    @apply bg-white/5 backdrop-blur-md border border-white/10 rounded-lg shadow-xl;
-  }
-  
-  .btn-primary {
-    @apply bg-primary hover:bg-secondary text-white font-medium py-2 px-4 rounded transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed;
-  }
-
-  .btn-danger-outline {
-    @apply border border-danger text-danger hover:bg-danger hover:text-white font-medium py-2 px-4 rounded transition-all duration-200;
-  }
-
-  .input-field {
-    @apply w-full bg-white/5 border border-white/10 rounded-md px-4 py-2 text-text focus:outline-none focus:ring-2 focus:ring-primary/50 transition-all;
->>>>>>> 53d7e9f (first commit)
   }
 }

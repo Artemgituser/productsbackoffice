@@ -50,7 +50,6 @@ async function seed() {
     await Produit.bulkCreate(produitsData);
     console.log(`${produitsData.length} produits créés avec faker.commerce.`);
 
-<<<<<<< HEAD
     // 4. Création des utilisateurs
     const hashedPassword = await bcrypt.hash("password123", 10);
     await User.bulkCreate([
@@ -58,9 +57,6 @@ async function seed() {
       { email: 'editor2@test.com', passwordHash: hashedPassword, role: 'editor' }
     ]);
     console.log("2 utilisateurs (editor1/editor2) créés.");
-
-=======
->>>>>>> 53d7e9f (first commit)
     console.log("Seeding terminé avec succès !");
     process.exit(0);
   } catch (error) {

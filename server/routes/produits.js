@@ -13,11 +13,7 @@ router.get('/', async (req, res) => {
       include: [
         {
           model: Categorie,
-<<<<<<< HEAD
           as: 'Categorie'
-=======
-          as: 'categorie'
->>>>>>> 53d7e9f (first commit)
         }
       ]
     });
@@ -28,7 +24,6 @@ router.get('/', async (req, res) => {
   }
 });
 
-<<<<<<< HEAD
 // POST /api/produits
 // Créer un nouveau produit
 router.post('/', async (req, res) => {
@@ -127,7 +122,4 @@ router.delete('/:id', async (req, res) => {
     res.status(500).json({ message: 'Erreur lors de la suppression du produit' });
   }
 });
-
-=======
->>>>>>> 53d7e9f (first commit)
 module.exports = router;

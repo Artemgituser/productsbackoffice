@@ -5,7 +5,6 @@ export default {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-<<<<<<< HEAD
     extend: {
       colors: {
         primary: "#006666",
@@ -25,9 +24,6 @@ export default {
         'neumorphic-inset': 'inset 4px 4px 8px #c4c2c1, inset -4px -4px 8px #ffffff',
       }
     },
-=======
-    extend: {},
->>>>>>> 53d7e9f (first commit)
   },
   plugins: [],
 }

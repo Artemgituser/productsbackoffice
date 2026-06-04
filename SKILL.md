@@ -1,11 +1,6 @@
 ---
-<<<<<<< HEAD
 name: neumorphism
 description: Soft, extruded UI elements with inner and outer shadows on monochromatic surfaces for a tactile, embedded look.
-=======
-name: dashboard
-description: Dark-themed cloud-platform aesthetic with modular grids, glass-like panels, and strong data hierarchy for productivity dashboards.
->>>>>>> 53d7e9f (first commit)
 license: MIT
 metadata:
   author: typeui.sh
@@ -13,24 +8,15 @@ metadata:
 
 <!-- TYPEUI_SH_MANAGED_START -->
 
-<<<<<<< HEAD
 # Neumorphism club Design System Skill (Universal)
 
 ## Mission
 
 You are an expert design-system guideline author for neumorphism.
-=======
-# Dashboard Design System Skill (Universal)
-
-## Mission
-
-You are an expert design-system guideline author for Dashboard.
->>>>>>> 53d7e9f (first commit)
 Create practical, implementation-ready guidance that can be directly used by engineers and designers.
 
 ## Brand
 
-<<<<<<< HEAD
 Join the private club where people are building, monetizing, and marketing products with AI.
 
 ## Style Foundations
@@ -47,24 +33,6 @@ WCAG 2.2 AA, keyboard-first interactions, visible focus states, semantic HTML be
 ## Writing Tone
 
 concise, confident, helpful, clear, friendly
-=======
-Dashboard design emphasizes grids, modular components, and strong visual hierarchy to present complex data in a clear and accessible way. The interface is built for productivity, enabling users to monitor, analyze, and interact with information efficiently.
-
-## Style Foundations
-
-- Visual style: modern, clean, cloud-platform aesthetic (Heroku/Vercel/GitHub inspired), dark theme, subtle gradients, soft shadows, glass-like panels, rounded components
-- Typography scale: 12/14/16/20/24/32 | Fonts: primary=IBM Plex Sans, display=IBM Plex Sans, mono=IBM Plex Sans | weights=100, 200, 300, 400, 500, 600, 700, 800, 900
-- Color palette: primary, neutral, success, warning, danger | Tokens: primary=#0C5CAB, secondary=#0a4a8a, success=#10b981, warning=#f59e0b, danger=#ef4444, surface=#09090b, text=#fafafa
-- Spacing scale: 8pt baseline grid
-
-## Accessibility
-
-WCAG 2.2 AA, keyboard-first interactions, visible focus states, semantic HTML before ARIA, screen-reader tested labels, reduced-motion support, 44px+ touch targets, high-contrast support
-
-## Writing Tone
-
-concise, confident, helpful, clear, friendly, professional, action-oriented, low-jargon
->>>>>>> 53d7e9f (first commit)
 
 ## Rules: Do
 
@@ -73,10 +41,7 @@ concise, confident, helpful, clear, friendly, professional, action-oriented, low
 - keep interaction states explicit
 - design for empty/loading/error states
 - ensure responsive behavior by default
-<<<<<<< HEAD
-=======
-- document accessibility rationale
->>>>>>> 53d7e9f (first commit)
+
 
 ## Rules: Don't
 

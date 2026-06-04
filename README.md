@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # 🏢 Backoffice Dashboard
 
 A modern, Neumorphic-styled backoffice application for managing products and categories. Built with **Vue 3**, **Vite**, **Tailwind CSS 4**, and **Node.js**.
@@ -117,21 +116,3 @@ The project follows a Neumorphic (soft UI) design. Key components are defined in
 ---
 
 
-=======
-# Backoffice Project
-
-A Node.js and Vue.js backoffice application.
-
-## Structure
-
-- `server/`: Express backend with Sequelize.
-- `client/`: Frontend application (to be initialized).
-
-## Getting Started
-
-### Backend
-
-1. `cd server`
-2. `npm install`
-3. `npm start`
->>>>>>> 53d7e9f (first commit)
